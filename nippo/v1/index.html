@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日報</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+    ■ 本システムについて
+    Kaienでは作業計画や日報、勤怠連絡をメールで送る。
+    作業計画や日報はヒューマンエラーが起きやすい。
+
+    過去のメールをコピー＆ペーストすると些細なミスに気付かないことがある。
+    ・「明日の予定」が「来週の予定」になってしまう。
+    ・「作業計画」と「日報」を間違える
+    ・日付を間違える
+    ・講師を間違える
+    また、些細なミスが気になってメールを送るのを躊躇してしまうことがあるだろう。
+
+    日々のストレスフルなメール作成を、少ない選択肢で自動化する。
+    これが本システム最大の目的である。
+    -->
+    <header>
+        <h1>✉日報作成システム</h1>
+    </header>
+    <main>
+        <section class="input-area">
+            <div class="input-form">
+                <div>■基本データ</div>
+                <div>
+                    あなたの名前: <input type="text" id="input_yourname" value="">
+                </div>
+                <div>
+                    日付: <input type="date" id="input_date">
+                </div>
+                <div>
+                    講師: 
+                    <select id="input_staff">
+                        <option value="">選択してください</option>
+                        <option value="A郎">[STAFF]A郎さん</option>
+                        <option value="B子">[STAFF]B子さん</option>
+                        <option value="C夫">[STAFF]C夫さん</option>
+                        <option value="○○">その他</option>
+                    </select>
+                </div>
+                <br>
+        
+                <div>■作業実績</div>        
+                <div class="input_task_count">
+                    <div>午前の作業</div>
+                    <div>
+                        <select id="am_tasks_count">
+                            <option value="0">なし</option>
+                            <option value="3">カスタム入力</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input_task_list">
+                    <div>
+                        <input type="text" id="input_am_task_1" hidden>
+                    </div>
+                    <div>
+                        <input type="text" id="input_am_task_2" hidden>
+                    </div>
+                    <div>
+                        <input type="text" id="input_am_task_3" hidden>
+                    </div>
+                </div>
+        
+                <div class="input_task_count">
+                    <div>午後の作業</div>
+                    <div>
+                        <select id="pm_tasks_count">
+                            <option value="0">なし</option>
+                            <option value="3">カスタム入力</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input_task_list">
+                    <div>
+                        <input type="text" id="input_pm_task_1" hidden>
+                    </div>
+                    <div>
+                        <input type="text" id="input_pm_task_2" hidden>
+                    </div>
+                    <div>
+                        <input type="text" id="input_pm_task_3" hidden>
+                    </div>
+                </div>
+                <br>
+                <div>■次回の予定</div>
+                次回の訓練日: <input type="date" id="input_next_date">
+                <div class="input_task_count">
+                    <div>午前の予定</div>
+                    <div>
+                        <select id="tomorrow_am_tasks_count">
+                            <option value="0">なし</option>
+                            <option value="3">カスタム入力</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input_task_list">
+                    <div>
+                        <input type="text" id="input_tomorrow_am_task_1" hidden>
+                    </div>
+                    <div>
+                        <input type="text" id="input_tomorrow_am_task_2" hidden>
+                    </div>
+                    <div>
+                        <input type="text" id="input_tomorrow_am_task_3" hidden>
+                    </div>
+                </div>
+        
+                <div class="input_task_count">
+                    <div>午後の予定</div>
+                    <div>
+                        <select id="tomorrow_pm_tasks_count">
+                            <option value="0">なし</option>
+                            <option value="3">カスタム入力</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input_task_list">
+                    <div>
+                        <input type="text" id="input_tomorrow_pm_task_1" hidden>
+                    </div>
+                    <div>
+                        <input type="text" id="input_tomorrow_pm_task_2" hidden>
+                    </div>
+                    <div>
+                        <input type="text" id="input_tomorrow_pm_task_3" hidden>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div class="">
+                <div>■今日の感想</div>
+                <textarea id="input_today_comment" cols="60" rows="10"></textarea>
+            </div>
+
+            <button id="submit_btn">メール生成</button>
+        </section>
+    
+        <section class="result-area">
+            <h3>結果</h3>
+            <div>
+                <div>件名</div>
+                <input type="text" id="mail_title">
+            </div>
+        
+            <div>
+                <div>メール本文</div>
+                <textarea id="mail_text" cols="60" rows="30"></textarea>
+            </div>
+        </section>    
+    </main>
+
+    <script src="main_nippo.js"></script>
+</body>
+</html>

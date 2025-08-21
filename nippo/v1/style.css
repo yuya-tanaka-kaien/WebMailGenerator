@@ -1,0 +1,7 @@
+.input_task_count div {
+    display: inline;
+}
+
+.input_task_list div input {
+    width: 20em;
+}
