@@ -1,5 +1,8 @@
 # メール生成システム
 
+<img width="700" height="450" alt="スクリーンショット 2025-08-21 134450" src="https://github.com/user-attachments/assets/f75c15bd-9e26-4c29-b8c0-8db2fe5781b1" />
+
+
 ## ■ 本システムについて
 
 Kaienでは作業計画や日報、勤怠連絡をメールで送る。
@@ -32,6 +35,8 @@ Kaienでは作業計画や日報、勤怠連絡をメールで送る。
 
 ### 1. トップページ(/index.html)から「■ 作業計画」を選択
 
+<img width="570" height="333" alt="mailsystem_keikaku_1" src="https://github.com/user-attachments/assets/0b426e76-0754-44f8-b647-b22d56392c02" />
+
 ### 2. 自分の名前を入力
 
 ### 3. 対象の日付を選択
@@ -41,6 +46,7 @@ Kaienでは作業計画や日報、勤怠連絡をメールで送る。
 プリセットとして設定しておいた講師をプルダウンで選択できる。
 
 もしプルダウン上に講師がいない場合は「その他」を選択すること。（後で講師を手動入力することができる）
+<img width="644" height="675" alt="スクリーンショット 2025-08-21 121224" src="https://github.com/user-attachments/assets/97f119a6-2944-4e48-b577-18c81fa24678" />
 
 ### 5. 作業計画を「午前」「午後」に分けて入力する
 プルダウンを開き、「カスタム入力」を選択。
@@ -49,11 +55,17 @@ Kaienでは作業計画や日報、勤怠連絡をメールで送る。
 
 もし午後半休で午前中しか作業をしない場合は、午後の項目を「なし」のなまにしておくこと。
 
-### 6. 「生成」ボタンを押し、メールを生成する
+<img width="504" height="321" alt="スクリーンショット 2025-08-21 135015" src="https://github.com/user-attachments/assets/2bc3faf1-d33c-4bad-b693-f4eb4d26479b" />
+
+
+### 6. 「メール生成」ボタンを押し、メールを生成する
 
 修正箇所がある場合はテキストボックスから直接編集ができる。
 
 生成された文章ははそのままコピペすることでメールとして利用が可能。
+
+<img width="687" height="501" alt="image" src="https://github.com/user-attachments/assets/71e96af7-2e85-4af9-b0cf-ea1b9abea531" />
+
 
 ## ■ 日報メールの作り方
 
