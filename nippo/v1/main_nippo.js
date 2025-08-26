@@ -252,7 +252,7 @@ function update_mail_result() {
 
     mailResultTitle.value = getMailTitle(mailType, yourName, dateText);
 
-    // ↓ウアアアアアア長すぎる引数。これは最悪…。
+    // 引数が多く改善の余地あり
     mailResultText.value = getMailText(yourName, staffName, amTaskArray, pmTaskArray, tomorrowAMTaskArray, tomorrowPMTaskArray, todayComment);
 }
 
