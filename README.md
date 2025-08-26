@@ -1,5 +1,9 @@
 # メール生成システム
 
+**デモサイト**
+
+https://yuya-tanaka-kaien.github.io/WebMailGenerator/
+
 <img width="700" height="450" alt="スクリーンショット 2025-08-21 134450" src="https://github.com/user-attachments/assets/f75c15bd-9e26-4c29-b8c0-8db2fe5781b1" />
 
 
@@ -69,6 +73,8 @@ Kaienでは作業計画や日報、勤怠連絡をメールで送る。
 
 ### 1. トップページ(/index.html)から「■ 日報」を選択
 
+<img width="570" height="333" alt="mailsystem_nippo_1" src="https://github.com/user-attachments/assets/edc647e4-33b5-420e-83ed-34faba7841ec" />
+
 ### 2. 自分の名前を入力
 
 ### 3. 対象の日付を選択
@@ -78,6 +84,8 @@ Kaienでは作業計画や日報、勤怠連絡をメールで送る。
 プリセットとして設定しておいた講師をプルダウンで選択できる。
 
 もしプルダウン上に講師がいない場合は「その他」を選択すること。（後で講師を手動入力することができる）
+<img width="556" height="507" alt="スクリーンショット 2025-08-22 111058" src="https://github.com/user-attachments/assets/3f424783-9522-4bf2-a706-c146456f5d92" />
+
 
 ### 5. 今日行った作業を「午前」「午後」に分けて入力する
 プルダウンを開き、「カスタム入力」を選択。
@@ -85,6 +93,9 @@ Kaienでは作業計画や日報、勤怠連絡をメールで送る。
 ３つの項目が出てくるので作業した分だけ作業内容を入力する。空白にしたところは生成されない。
 
 もし午後半休で午前中しか作業をしていない場合は、午後の項目を「なし」のなまにしておくこと。
+
+<img width="438" height="428" alt="スクリーンショット 2025-08-22 111306" src="https://github.com/user-attachments/assets/924d23f6-7a62-4d58-b0b5-6fa5f44abead" />
+
 
 ### 6. 次回訓練に参加する日付を入力
 デフォルトでは空っぽなので入力する必要がある。
@@ -96,8 +107,16 @@ Kaienでは作業計画や日報、勤怠連絡をメールで送る。
 
 もし午後半休で午前中しか作業をしない予定の場合は、午後の項目を「なし」のなまにしておくこと。
 
-### 8. 「生成」ボタンを押し、メールを生成する
+### 8. 今日の感想を入力する
+
+<img width="688" height="634" alt="image" src="https://github.com/user-attachments/assets/909a74b2-248e-4200-b3d7-c36c3e4eabcc" />
+
+
+### 9. 「メール生成」ボタンを押し、メールを生成する
 
 修正箇所がある場合はテキストボックスから直接編集ができる。
 
 生成された文章ははそのままコピペすることでメールとして利用が可能。
+
+<img width="803" height="756" alt="image" src="https://github.com/user-attachments/assets/a2c5fb3e-7360-4fd5-95a0-b87946fd8c25" />
+
